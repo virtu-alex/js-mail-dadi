@@ -33,9 +33,9 @@ button.addEventListener("click", function () {
 
     for (let i = 0; i < 6; i++) {
         if (userChoice > cpuChoice) {
-            result.innerHTML = 'Hai vinto =)'
+            result.innerHTML = 'You Won =)'
         } else if (userChoice < cpuChoice) {
-            result.innerHTML = 'Hai perso =('
+            result.innerHTML = 'You Lost =('
         } else if (userChoice === cpuChoice) {
             alert("Ooops... stesso numero, premi INVIO per tirare di nuovo");
         }
