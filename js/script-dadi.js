@@ -21,21 +21,25 @@ console.log(cpuChoice + ' randomizzatore cpu');
 const button = document.getElementById("button-dice");
 
 
-for (let i = 0; i < 6; i++) {
-    if (userChoice > cpuChoice) {
-        console.log('Hai vinto')
-    } else if (userChoice < cpuChoice) {
-        console.log('Hai perso')
-    } else if (userChoice === cpuChoice) {
-        alert("Ooops... stesso numero, premi INVIO per tirare di nuovo");
-    }
-}
 
-const userScore = document.getElementById('user-dice');
-const cpuScore = document.getElementById('cpu-dice');
+const userScore = document.getElementById('user-point');
+const cpuScore = document.getElementById('cpu-point');
+const result = document.getElementById('final-result');
+
+
 button.addEventListener("click", function () {
-    userScore.innerHTML = userChoice
-    cpuScore.innerHTML = cpuChoice
+    userScore.innerHTML = userChoice;
+    cpuScore.innerHTML = cpuChoice;
+
+    for (let i = 0; i < 6; i++) {
+        if (userChoice > cpuChoice) {
+            result.innerHTML = 'Hai vinto =)'
+        } else if (userChoice < cpuChoice) {
+            result.innerHTML = 'Hai perso =('
+        } else if (userChoice === cpuChoice) {
+            alert("Ooops... stesso numero, premi INVIO per tirare di nuovo");
+        }
+    }
 
 })
 
