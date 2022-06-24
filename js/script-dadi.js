@@ -7,7 +7,6 @@ Se dobbiamo confrontare qualcosa che "cosa" ci serve?*/
 
 
 /*AZIONE-1 CREO UN ARRAY CHE CONTENGA TUTTE LE FACCE DEL DADO */
-const randomNumber = [1, 2, 3, 4, 5, 6];
 
 /*AZIONE-2 GENERO UNA COSTANTE CON UN NUMERO RANDOM DA 1 A 6 PER L'UTENTE*/
 
@@ -22,20 +21,23 @@ console.log(cpuChoice + ' randomizzatore cpu');
 const button = document.getElementById("button-dice");
 
 
-for (let i = 0; i < randomNumber.length; i++) {
+for (let i = 0; i < 6; i++) {
     if (userChoice > cpuChoice) {
         console.log('Hai vinto')
     } else if (userChoice < cpuChoice) {
         console.log('Hai perso')
-    }else if(userChoice === cpuChoice){
+    } else if (userChoice === cpuChoice) {
         alert("Ooops... stesso numero, premi INVIO per tirare di nuovo");
     }
 }
 
+const userScore = document.getElementById('user-dice');
+const cpuScore = document.getElementById('cpu-dice');
+button.addEventListener("click", function () {
+    userScore.innerHTML = userChoice
+    cpuScore.innerHTML = cpuChoice
 
-button.addEventListener("click"), function() {
-
-}
+})
 
 
 
