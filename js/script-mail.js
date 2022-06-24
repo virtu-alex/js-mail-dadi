@@ -11,14 +11,20 @@ let emails = ['alessiocordari@gmail.com', 'fabrimastro@gmail.com', 'enricocamp@g
 let userEmail = prompt('Inserisci la tua email qui...', 'alessiocordari@gmail.com');
 
 
-for (let i = 0; i <= emails.length -1; i++)
+for (let i = 0; i <= emails.length - 1; i++) {
     //AZIONE-3 CONTROLLA SE LA MAIL SIA NELLA LISTA
     if (emails[i] === userEmail) {
         /* AZIONE-4 STAMPA IN CONSOLE IL RISULTATO (SE PRESENTE NELLA LISTA "BENVENUTO" ALTRIMENTI SE NON PRESENTE NELLA LISTA "SPIACENTI")*/
         console.log('Benvenuto ' + userEmail);
-
-    } else if(emails[i] !== userEmail) {
-        /* AZIONE-4 STAMPA IN CONSOLE IL RISULTATO (SE NON PRESENTE NELLA LISTA "SPIACENTI")*/
-        console.log('Spiacenti');
     }
+
+    else if (emails[i] !== userEmail) {
+        console.log('Spiacenti');
+
+    }
+}
+
+
+/* AZIONE-4 STAMPA IN CONSOLE IL RISULTATO (SE NON PRESENTE NELLA LISTA "SPIACENTI")*/
+
 

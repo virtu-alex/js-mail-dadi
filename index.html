@@ -9,10 +9,46 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <title>Mail dadi</title>
+    <title>Mail-dadi</title>
 </head>
 
 <body>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-4 text-end">
+                <h1>
+                    USER DICE
+                </h1>
+            </div>
+            <div class="col-4 text-center">
+                <h1 class="goodluck">
+                    GOOD LUCK!
+                </h1>
+            </div>
+            <div class="col-4">
+                <h1>
+                    CPU DICE
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-center align-items-center">
+                <div id="user-dice" class="dice m-2"></div>
+                <button id="button-dice">GIRA IL DADO</button>
+                <div id="cpu-dice" class="dice m-2"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border py-5">
+                <h1 class="text-center">
+                    THE WINNER IS:
+                </h1>
+                <div class="winner-box text-center">
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -20,7 +56,7 @@
 
 
 
-<script src="js/script-dadi.js"></script>
+    <script src="js/script-dadi.js"></script>
 </body>
 
 </html>

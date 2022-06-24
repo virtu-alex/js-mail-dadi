@@ -1,5 +1,32 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+button {
+    background-color: rgb(31, 153, 201);
+    border-radius: 6px;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    width: 200px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.goodluck{
+    transform: translateY(-50px);
+}
+
+.dice {
+    background-color: green;
+    width: 200px;
+    height: 200px;
+}
+
+.winner-box {
+    height: 50px;
+    border: 5px solid black;
 }
