@@ -6,8 +6,6 @@ Che ci sia un array da qualche parte?
 Se dobbiamo confrontare qualcosa che "cosa" ci serve?*/
 
 
-/*AZIONE-1 CREO UN ARRAY CHE CONTENGA TUTTE LE FACCE DEL DADO */
-
 /*AZIONE-2 GENERO UNA COSTANTE CON UN NUMERO RANDOM DA 1 A 6 PER L'UTENTE*/
 
 const userChoice = Math.floor(Math.random() * 6 + 1);
@@ -31,14 +29,12 @@ button.addEventListener("click", function () {
     userScore.innerHTML = userChoice;
     cpuScore.innerHTML = cpuChoice;
 
-    for (let i = 0; i < 6; i++) {
-        if (userChoice > cpuChoice) {
-            result.innerHTML = 'You Won =)'
-        } else if (userChoice < cpuChoice) {
-            result.innerHTML = 'You Lost =('
-        } else if (userChoice === cpuChoice) {
-            alert("Ooops... stesso numero, premi INVIO per tirare di nuovo");
-        }
+    if (userChoice > cpuChoice) {
+        result.innerHTML = 'You Won =)'
+    } else if (userChoice < cpuChoice) {
+        result.innerHTML = 'You Lost =('
+    } else {
+        alert("Ooops... stesso numero, premi INVIO per tirare di nuovo");
     }
 
 })
