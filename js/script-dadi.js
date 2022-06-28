@@ -34,7 +34,7 @@ button.addEventListener("click", function () {
     } else if (userChoice < cpuChoice) {
         result.innerHTML = 'You Lost =('
     } else {
-        alert("Ooops... stesso numero, premi INVIO per tirare di nuovo");
+        alert("Ooops... stesso numero, premi f5 per giocare di nuovo");
     }
 
 })
